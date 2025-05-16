@@ -17,3 +17,6 @@ Nous avons également créé une version tentant d'utiliser un LLM, ici Deepseek
 Ce programme demande des chemins d'accès à des fichiers, et demande d'enregistrer des nouveaux fichiers pour les  réutiliser.
 Pour pouvoir utiliser ce code, il faut changer les chemins des documents directement dans le code, 
 les lignes à modifier avant de lancer le code sont signalées par un commentaire #PATH.
+
+# Bibliographie 
+Ce code s'inspire grandement du cours de mjwmattingly et de son dépôt github.
