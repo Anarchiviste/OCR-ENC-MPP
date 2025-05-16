@@ -88,14 +88,14 @@ plt.show()
 ocr_result = pytesseract.image_to_string(img)
 print (ocr_result)
 
-#création d'un .txt de sortie
+# Création d'un .txt de sortie
 output_path = "/content/ocr_output.txt" #PATH
 with open(output_path, "w") as text_file: 
     text_file.write(ocr_result)
 
 print(f"OCR result saved to: {output_path}")
 
-#définition de la fonction de nettoyage
+# Définition de la fonction de nettoyage
 def nettoyer_texte_ocr(texte):
     # Correction des substitutions fréquentes
     corrections = {
@@ -129,7 +129,7 @@ def nettoyer_texte_ocr(texte):
 texte_nettoye = nettoyer_texte_ocr(ocr_result)
 print("Texte nettoyé :\n", texte_nettoye)
 
-#création d'un .txt de sortie du texte nettoyé
+# Création d'un .txt de sortie du texte nettoyé
 output_path = "/content/regex_output.txt" #PATH
 with open(output_path, "w") as text_file:
     text_file.write(texte_nettoye)
