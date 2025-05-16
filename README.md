@@ -11,3 +11,9 @@ Dans ce cadre, le projet intitulé “Les arrêtés de protection du patrimoine 
 
 Notre objectif est d'étudier avec des méthodes diplomatique les arrêtés de protection du patrimoine immeuble et des objets conservés par la MPP. Nous devons conjuguer cette étude avec une réflexion sur l'utilisation de l'intelligence artificielle pour une automatisation de la reconnaissance, l'extraction et la saisie des notices de références des arrêtés.
 Nous avons également créé une version tentant d'utiliser un LLM, ici Deepseek r1 8b avec Ollama pour fournir la transcription et essayer d'automatiser le processus 
+
+# /!\ Attention /!\
+
+Ce programme demande des chemins d'accès à des fichiers, et demande d'enregistrer des nouveaux fichiers pour les  réutiliser.
+Pour pouvoir utiliser ce code, il faut changer les chemins des documents directement dans le code, 
+les lignes à modifier avant de lancer le code sont signalées par un commentaire #PATH.
