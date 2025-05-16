@@ -37,35 +37,31 @@ def display(im_path):
 
     height, width  = im_data.shape[:2]
 
-    # What size does the figure need to be in inches to fit the image?
+    # La taille de l'image
     figsize = width / float(dpi), height / float(dpi)
-
-    # Create a figure of the right size with one axes that takes up the full figure
     fig = plt.figure(figsize=figsize)
     ax = fig.add_axes([0, 0, 1, 1])
-
-    # Hide spines, ticks, etc.
     ax.axis('off')
 
-    # Display the image.
+    # Projection
     ax.imshow(im_data, cmap='gray')
-
     plt.show()
-
+  
+# Projection de l'image en bonne qualité pour vérification
 display(image_file)
 
 # Chargement de l'image dans la variable img
 img = cv2.imread(image_file)
 
-# Définition de la fonction de grayscale
+# Définition de la fonction de monochromisation dans une fonction nommée grayscale
 def grayscale(image):
     return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-# Passage du .jpg dans la fonction greyscale + chargement dans variable gray_image
+# Passage du .jpg dans la fonction de monochromisation grayscale + chargement du résultat dans variable gray_image
 gray_image = grayscale(img)
 cv2.imwrite("content/sample_data/gray.jpg", gray_image) #PATH
 
-# Sauvegarde de l'image monochrome en .jpg
+# Sauvegarde de l'image monochrome en .jpg nommée gray.jpg
 cv2.imwrite("/content/sample_data/gray.jpg", gray_image) #PATH
 
 # Vérification visuel de l'image monochrome
