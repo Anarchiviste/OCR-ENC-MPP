@@ -64,7 +64,7 @@ cv2.imwrite("content/sample_data/gray.jpg", gray_image) #PATH
 # Sauvegarde de l'image monochrome en .jpg nommée gray.jpg
 cv2.imwrite("/content/sample_data/gray.jpg", gray_image) #PATH
 
-# Vérification visuel de l'image monochrome
+# Vérification visuelle de l'image monochrome
 plt.imshow(gray_image, cmap='gray')
 plt.axis('off')
 plt.show()
