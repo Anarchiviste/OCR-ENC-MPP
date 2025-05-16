@@ -1,3 +1,5 @@
+# Tesseract OCR for archive management
+
 #Installation des librairies
 !pip install pdf2image
 !sudo apt-get install poppler-utils
